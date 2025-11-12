@@ -13,6 +13,8 @@ class ProjectReader:
         print(content)
 
         parsed_toml = toml.loads(content)
+        print(parsed_toml)
+        
         poetryinfo = parsed_toml.get("tool").get("poetry")
         name = poetryinfo.get("name")
         description = poetryinfo.get("description")

@@ -6,7 +6,6 @@ def main():
     reader = ProjectReader(url)
     print(reader.get_project())
 
-
 if __name__ == "__main__":
     main()
 
